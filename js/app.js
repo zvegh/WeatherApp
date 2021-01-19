@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
             long = position.coords.longitude;
             lat = position.coords.latitude;
 
-            const proxy = 'http://cors-anywhere.herokuapp.com/';
+            const proxy = 'https://cors-anywhere.herokuapp.com/';
             const api = `${proxy}https://api.darksky.net/forecast/3a60f196696c6d5e754a3715558afc1c/${lat},${long}`;
             
             fetch(api)
